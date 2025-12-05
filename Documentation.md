@@ -445,7 +445,7 @@ cp -rap qcom-dtb-metadata/qcom-fitimage.its qcom-dtb-metadata/qcom-next-fitimage
 
 # Copy the dtb/dtbo files from the kernel tree to the fit_image directory. For steps on cloning and building the Qualcomm Linux Kernel Tree, pls refer https://github.com/qualcomm-linux/kmake-image/blob/main/README.md.
 # Checkout and build Qualcomm Linux Kernel : main branch, if you need dtb/dtbo from upstream kernel (https://github.com/qualcomm-linux/kernel/tree/main)
-# Checkout and build Qualcomm Linux Kernel : qcom-next branch, if you need dts/dtso from qcom-next kernel (https://github.com/qualcomm-linux/kernel/tree/qcom-next). 
+# Checkout and build Qualcomm Linux Kernel : qcom-next branch, if you need dtb/dtbo from qcom-next kernel (https://github.com/qualcomm-linux/kernel/tree/qcom-next). 
 mkdir -p fit_image/arch/arm64/boot/dts/qcom/
 # Copy the compiled *dtb* files from the kernel's kobj directory into your fit_image directory
 cp -rap kobj/arch/arm64/boot/dts/qcom/*.dtb* fit_image/arch/arm64/boot/dts/qcom/
