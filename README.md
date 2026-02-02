@@ -1,6 +1,16 @@
 # qcom-dtb-metadata
 
-*qcom-dtb-metadata* project provides a specification document and qcom-metadata.dts file for FIT Based DTB packaging and selection as required by Qualcomm Linux.
+*qcom-dtb-metadata* project provides a specification document and
+qcom-metadata.dts file for FIT Based DTB packaging and selection as required by
+Qualcomm Linux.
+
+Refer [Documentation](Documentation.md) for details related to specification,
+packaging and selection of dtbs.
+
+## Supported Platforms
+
+Refer [QCOM Supported Platforms](qcom-platforms.md) for details on supported
+platforms and dtb that corresponds to it.
 
 ## Contribute
 
