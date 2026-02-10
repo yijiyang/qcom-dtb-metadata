@@ -85,6 +85,10 @@
 			data = /incbin/("./arch/arm64/boot/dts/qcom/sa8775p-ride-camx.dtbo");
 			type = "flat_dt";
 		};
+		fdt-lemans-el2.dtbo {
+			data = /incbin/("./arch/arm64/boot/dts/qcom/lemans-el2.dtbo");
+			type = "flat_dt";
+		};
 	};
 
 	configurations {
@@ -227,6 +231,38 @@
 		conf-35 {
 			compatible = "qcom,qcs615v1.1-iot-subtype6";
 			fdt = "fdt-talos-evk-lvds-auo,g133han01.dtb";
+		};
+		conf-36 {
+			compatible = "qcom,qcs9075-iot-el2kvm";
+			fdt = "fdt-lemans-evk.dtb", "fdt-lemans-el2.dtbo";
+		};
+		conf-37 {
+			compatible = "qcom,qcs9075v2-iot-el2kvm";
+			fdt = "fdt-lemans-evk.dtb", "fdt-lemans-el2.dtbo";
+		};
+		conf-38 {
+			compatible = "qcom,qcs9100-qam-el2kvm";
+			fdt = "fdt-qcs9100-ride.dtb", "fdt-lemans-el2.dtbo";
+		};
+		conf-39 {
+			compatible = "qcom,qcs9100v2-qam-el2kvm";
+			fdt = "fdt-qcs9100-ride.dtb", "fdt-lemans-el2.dtbo";
+		};
+		conf-40 {
+			compatible = "qcom,qcs9100-qamr2-el2kvm";
+			fdt = "fdt-qcs9100-ride-r3.dtb", "fdt-lemans-el2.dtbo";
+		};
+		conf-41 {
+			compatible = "qcom,qcs9100v2-qamr2-el2kvm";
+			fdt = "fdt-qcs9100-ride-r3.dtb", "fdt-lemans-el2.dtbo";
+		};
+		conf-42 {
+			compatible = "qcom,qcs9075-iot-camx-el2kvm";
+			fdt = "fdt-lemans-evk.dtb", "fdt-lemans-evk-camx.dtbo", "fdt-lemans-el2.dtbo";
+		};
+		conf-43 {
+			compatible = "qcom,qcs9075v2-iot-camx-el2kvm";
+			fdt = "fdt-lemans-evk.dtb", "fdt-lemans-evk-camx.dtbo", "fdt-lemans-el2.dtbo";
 		};
 	};
 };
